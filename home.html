@@ -9,44 +9,53 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Movie Rating Website</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+        scroll-padding-top: 2rem;
+      }
+    </style>
 </head>
 
-<body class="m-0 p-0 box-border scroll-pt-8 bg-[#1e1e2a]">
+<body class="bg-[#1e1e2a]">
     <!-- Header -->
     <header  class="fixed top-0 left-0 w-full z-[100] bg-[#1e1e2a]">
-        <!-- nav -->
-        <div class="flex items-center justify-center pt-5 pb-0 max-w-[1060px] m-auto w-full">
-            <!-- img -->
-            <a href="index.html" class="no-underline text-2xl text-white font-semibold mt-0 mr-auto mb-0 ml-0 uppercase">Re<span class="text-[#ffb43a]">Fil</span></a>
-            <!-- search box -->
-            <div class="max-w-[240px] w-full flex items-center gap-x-[0.7rem] py-[8px] px-[15px] bg-[#2d2e37] rounded-full mr-4 mb-4">
-                <input class="w-full border-none outline-none text-white bg-transparent text-[0.938rem]" type="search" name="" id="search-input" placeholder="Search Movie"> 
-                <div class="text-base text-[#fcfeff] hover:text-[#ffb4a3]"><i class='bx bx-search'></i></div>
-                
-            </div>
-            <!-- navbar -->
-            <div class="font-bold fixed top-1/2 translate-y-[-50%] left-[25px] flex flex-col gap-y-[2.1rem]">
-                <a href="#home" class="flex flex-col items-center scale-110 text-white hover:scale-125">
-                    <div class="text-2xl">
-                        <i class='bx bx-home'></i>
-                    </div>
-                    <span class="text-[0.7rem]">Home</span>
-                </a>
-                <a href="#about" class="nav-link flex flex-col items-center text-[#b7b7b7] hover:text-white hover:scale-110">
-                    <div class="text-[1.6rem]">
-                        <i class='bx bx-question-mark'></i>
-                    </div>
-                    <span class="text-[0.7rem]">About</span>
-                </a>
-                <a href="signin.html" class="nav-link flex flex-col items-center scale-110 text-white hover:scale-125">
-                    <div class="text-[1.6rem]">
-                        <i class='bx bx-log-in-circle' ></i>
-                    </div>
-                    <span class="text-[0.7rem]">Log In</span>
-                </a>
-            </div>
-        </div>
-    </header>
+      <!-- nav -->
+      <div class="flex items-center justify-center pt-5 pb-0 max-w-[1060px] m-auto w-full">
+          <!-- img -->
+          <a href="index.html" class="no-underline text-2xl text-white font-semibold xl:mt-0 mt-0 mr-auto xl:mb-0 mb-[12px] ml-[10px] xl:ml-0 uppercase">Re<span class="text-[#ffb43a]">Fil</span></a>
+          <!-- search box -->
+          <div class="max-w-[240px] w-full flex items-center gap-x-[0.7rem] py-[8px] px-[15px] bg-[#2d2e37] rounded-full mr-4 mb-4">
+              <input class="w-full border-none outline-none text-white bg-transparent text-[0.938rem]" type="search" name="" id="search-input" placeholder="Search Movie"> 
+              <div class="text-base text-[#fcfeff] hover:text-[#ffb4a3]"><i class='bx bx-search'></i></div>
+              
+          </div>
+          <!-- navbar -->
+          <div class="xl:backdrop-blur-none backdrop-blur-sm xl:border-none border-t-2 border-white  z-[500] font-bold fixed w-full xl:w-[50px] top-0 xl:left-[20px] bottom-0 translate-y-0 xl:translate-y-[-50] left-auto top-auto text-center justify-center flex flex-row xl:gap-y-[2.1rem] gap-x-[2.1rem] xl:translate-y-[-50%] xl:flex-col ">
+              <a href="#home" class="flex flex-col items-center scale-110 text-white hover:scale-125">
+                  <div class="text-[1.6rem]">
+                      <i class='bx bx-home'></i>
+                  </div>
+                  <span class="text-[0.7rem]">Home</span>
+              </a>
+              <a href="#about" class="nav-link flex flex-col items-center text-[#b7b7b7] hover:text-white hover:scale-110 nav-active">
+                  <div class="text-[1.6rem]">
+                      <i class='bx bxs-hot'></i>
+                  </div>
+                  <span class="text-[0.7rem]">About</span>
+              </a>
+              <a href="signin.html" class="nav-link flex flex-col items-center scale-110 text-white hover:scale-125">
+                  <div class="text-[1.6rem]">
+                      <i class='bx bx-log-in-circle' ></i>
+                  </div>
+                  <span class="text-[0.7rem]">Log In</span>
+              </a>
+          </div>
+      </div>
+  </header>
     <!-- Home -->
     <section class="home relative max-w-5xl mx-auto pt-20 sm:pt-24 lg-pt-32 " id="home">
         <!-- home img -->
@@ -82,7 +91,7 @@
       </section>
     <!-- wishlist end -->
     <!-- footer -->
-    <footer class="text-[#fcfeff] body-font  max-w-5xl mx-auto  pt-20 sm:pt-24 lg-pt-32" >
+    <footer class="text-[#fcfeff] body-font mx-auto  max-w-5xl mb-[50px] pt-10 sm:pt-24 lg:pt-32 sm:mb-[25px]" >
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-[#fcfeff]">
             <h1 class="ml-3 text-2xl">Re<span class="text-orange-300">Fil</span></h1>

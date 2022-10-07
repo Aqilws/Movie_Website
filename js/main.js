@@ -38,7 +38,7 @@ var swiper = new Swiper(".popular-content", {
   });
   var swiper = new Swiper(".soon-content", {
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 5,
     autoplay: {
       delay: 755500,
       disableOnInteraction: false,
